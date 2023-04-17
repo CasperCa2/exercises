@@ -29,7 +29,7 @@ new Regex(regex).IsMatch(string)
 /regex/.exec(string)
 ```
 
-All these implementations differ from `re.fullmatch` in that they
+All these implementations differ from `re.fullmatch` in that they           
 only expect a *substring* of `string` to satisfy the pattern.
 
 For example, consider the regex `a`. In Python, `re.fullmatch('a', string)`

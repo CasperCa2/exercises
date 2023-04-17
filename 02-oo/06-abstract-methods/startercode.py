@@ -1,9 +1,20 @@
-class A:
+from abc import ABC, abstractmethod
+
+
+class A(ABC):
     def a(self):
         self.b()
 
     def e(self):
         self.c()
+
+    @abstractmethod
+    def b(self):
+        ...
+
+    @abstractmethod
+    def c(self):
+        ...
 
 
 class B(A):
@@ -19,9 +30,14 @@ class C(B):
         pass
 
 
+# Abstract
 class D(A):
     def b(self):
         self.f()
+
+    @abstractmethod
+    def f(self):
+        ...
 
 
 class E(D):
@@ -35,7 +51,15 @@ class E(D):
         self.f()
 
 
-class F:
+class F(ABC):
     def a(self):
         self.b()
         self.f()
+
+    @abstractmethod
+    def b(self):
+        ...
+
+    @abstractmethod
+    def f(self):
+        ...
