@@ -1,6 +1,7 @@
 
 def is_increasing(ns):
-    for (x, y) in zip(ns, ns[1:]):
-        if x > y:
+    ms = ns[1:]
+    for (i, k) in (zip(ns, ms)):
+        if i > k:
             return False
     return True

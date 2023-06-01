@@ -2,8 +2,7 @@
 
 
 def contains_duplicates(ns):
-
-    if len(set(ns)) < len(ns):
+    if len(ns) == set(ns):
         return True
     else:
         return False

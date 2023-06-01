@@ -1,6 +1,3 @@
-# Write your code here
-dictionary = {
-}
 
 
 def contains_key(dictionary, key):

@@ -1,16 +1,20 @@
 
 
 class Queue:
+
     def __init__(self):
-        self.__queue = []
+
+        self.queue = []
 
     def add(self, item):
-        self.__queue.append(item)
-
-    def is_empty(self):
-        return len(self.__queue) == 0
+        self.queue.append(item)
 
     def next(self):
-        item = self.__queue[0]
-        del self.__queue[0]
-        return item
+
+        return self.queue.pop(0)
+
+    def is_empty(self):
+        if len(self.queue) == 0:
+            return True
+        else:
+            return False

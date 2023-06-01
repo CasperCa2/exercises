@@ -2,10 +2,10 @@
 
 
 def remove_duplicates(xs):
+    list = []
     found = set()
-    result = []
-    for x in xs:
-        if x not in found:
-            result.append(x)
-            found.add(x)
-    return result
+    for k in xs:
+        if k not in found:
+            list.append(k)
+            found.add(k)
+    return list

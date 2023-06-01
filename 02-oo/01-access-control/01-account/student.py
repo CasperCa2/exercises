@@ -1,8 +1,13 @@
+
+
 class Account:
 
-    def __init__(self, login, pw):
+    def __init__(self, login, password):
         self.login = login
-        self.__password = pw
+        self.__password = password
 
-    def is_correct_password(self, pw):
-        return self.__password == pw
+    def is_correct_password(self, password):
+        if self.__password == password:
+            return True
+        else:
+            return False

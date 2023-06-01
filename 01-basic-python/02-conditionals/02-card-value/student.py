@@ -1,13 +1,17 @@
 # Write your code here
 
+
 def card_value(string):
-    if string == 'Jack':
-        return 11
-    elif string == 'Queen':
-        return 12
-    elif string == 'King':
+    if string == "King":
         return 13
-    elif string == 'Ace':
+
+    if string == "Ace":
         return 1
+
+    if string == "Queen":
+        return 12
+
+    if string == "Jack":
+        return 11
     else:
-        return int(string)
+        return string

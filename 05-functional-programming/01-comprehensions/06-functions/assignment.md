@@ -1,3 +1,5 @@
+
+
 # Functions
 
 Python comes with a number of built-in functions, most of which you probably already know.

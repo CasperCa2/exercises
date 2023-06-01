@@ -31,7 +31,6 @@ class Position:
 
 
 class ChessPiece:
-
     def __init__(self, position, color):
         if not Pawn.is_valid_position(position):
             raise ValueError('invalid position')

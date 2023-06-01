@@ -1,5 +1,7 @@
 # Write your code here
 
-
 def between(x, lower, upper):
-    return lower <= x and x <= upper
+    if x >= lower and x <= upper:
+        return True
+    else:
+        return False

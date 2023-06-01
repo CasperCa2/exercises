@@ -2,11 +2,10 @@
 
 
 def coins(one, two, five, goal):
-
-    for i in range(0, one+1):
-        for j in range(0, two+1):
-            for k in range(0, five+1):
-                if i + 2 * j + 5 * k == goal:
+    for x in range(one+1):
+        for y in range(two+1):
+            for z in range(five+1):
+                if x + 2 * y + 5 * z == goal:
                     return True
-
-    return False
+    else:
+        return False

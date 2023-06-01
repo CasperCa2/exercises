@@ -1,5 +1,7 @@
-# Write your code here
 
 
 def keys(dictionary):
-    return dictionary.keys()
+    list = []
+    for i in dictionary.keys():
+        list.append(i)
+    return list

@@ -1,6 +1,6 @@
-# Write your code here
-
 
 def to_list_of_pairs(dictionary):
-
-    return dictionary.items()
+    list = []
+    for k, v in dictionary.items():
+        list.append((k, v))
+    return list

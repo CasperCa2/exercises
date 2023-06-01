@@ -4,7 +4,4 @@ import re
 
 
 def only_digits(string):
-    return re.fullmatch("\d*", string)
-
-
-# [1234567890]* is also and option
+    return re.fullmatch("[0-9]*", string)

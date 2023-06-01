@@ -1,8 +1,8 @@
-# Write your code here
-
 
 def create_dictionary(keys, values):
-    dictionary = {}
-    for key, value in zip(keys, values):
-        dictionary[key] = value
+    dictionary = dict()
+    list = (zip(keys, values))
+
+    for k, v in list:
+        dictionary[k] = v
     return dictionary

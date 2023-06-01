@@ -1,12 +1,9 @@
-# Write your code here
-
-dictionary = {}
-
 
 def odd_keys_dict(dictionary):
-    result = {}
+    new_dict = dict()
+
     for k, v in dictionary.items():
         if k % 2 != 0:
-            result[k] = v
+            new_dict[k] = v
 
-    return result
+    return new_dict

@@ -1,18 +1,15 @@
 class CircularBuffer:
+    def __init__(self, n):
+        self.max = n
+        self.circularbuffer = []
 
-    def __init__(self, n, buffer):
-        assert len(buffer) <= n, "fout"
-        buffer = []
-        self.maximum_size = n
-        self.buffer = buffer
+    def __len__(self):
+        return len(self.circularbuffer)
 
-    def __add__(self, item):
-        if len(self.buffer) > self.maximum_size:
-            self.buffer.__removetitem__(0)
-            self.buffer += item
+    def __getitem__(self, index):
+        return self.circularbuffer[index]
 
-    def __len__(buffer):
-        return len(buffer)
-
-    def __removetitem__(self, index):
-        self.buffer.remove(index)
+    def add(self, item):
+        if len(self.circularbuffer) >= self.max:
+            self.circularbuffer.pop(0)
+        self.circularbuffer.append(item)

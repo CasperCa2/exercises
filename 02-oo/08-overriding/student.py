@@ -26,10 +26,10 @@ class ShoppingList:
         self.__items.append(item)
 
 
-class Item(Customer):
+class Item():
 
     def __init__(self, name, price):
-        self.name = name
+        self.item = name
         self.price = price
 
     def can_be_sold_to(self, customer):
@@ -39,10 +39,15 @@ class Item(Customer):
 class AgeRestrictedItem(Item):
 
     def can_be_sold_to(self, customer):
-        return customer.age >= 18
+        if customer.age >= 18:
+            return True
+        else:
+            return False
 
 
 class CountryRestrictedItem(Item):
-
     def can_be_sold_to(self, customer):
-        return customer.country != "Arstotzka"
+        if customer.country == "Arstotzka":
+            return False
+        else:
+            return True
