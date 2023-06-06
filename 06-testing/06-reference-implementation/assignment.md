@@ -71,7 +71,7 @@ In other words, you should always guess the halfway number.
 
 Let's try to write this down more formally.
 At the beginning of the game, you know that the number will lie between 0 and 100, i.e., in the interval `[0, 100]`.
-Computing the middle gives 50, which is your next guess.
+Computing the middle gives 50, which is your next guess.        
 Our feedback is "Higher!".
 This lets you shrink the interval to `[51, 100]`.
 You again compute the middle, which gives 75 (we assume you round down).

@@ -1,10 +1,11 @@
 
 
-def group_by(xs, key_function):
-    dict = {}
+def group_by(xs,key_function):
+    dictionary = {}
     for x in xs:
         key = key_function(x)
-        if key not in dict:
-            dict[key] = []
-        dict[key].append(x)
-    return dict
+        if key not in dictionary:
+            dictionary[key] = []
+        dictionary[key].append(x) 
+        
+    return dictionary

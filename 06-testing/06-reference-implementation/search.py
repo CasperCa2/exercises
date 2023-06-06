@@ -1,4 +1,3 @@
-import pytest
 
 
 def linear_search(students, id):
@@ -10,12 +9,13 @@ def binary_search(students, id):
     right = len(students)
 
     while left < right:
-        middle = (left + right) // 2
-        middle_id = students[middle].id
+        mid = (left+right) // 2
+        middle_id = students[mid].id
         if id < middle_id:
-            right = middle
+            right = mid
         elif id > middle_id:
-            left = middle + 1
+            left = mid + 1
         else:
-            return students[middle]
+            return students[mid]
+
     return None

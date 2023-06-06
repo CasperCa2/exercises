@@ -1,3 +1,3 @@
-def repeat(function, n):
+def repeat(function,n):
     for i in range(n):
         function()

@@ -7,7 +7,7 @@ class StorageDevice():
         self.blockcount = block_count
         self.blocksize = block_size
 
-    def total_block_count(self):
+    def block_count(self):
         return self.blockcount
 
     def block_size(self):
